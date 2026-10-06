@@ -3,7 +3,7 @@ CFLAGS  = -Wall -Wextra -O2 -static -std=c17 -Iinclude
 LDFLAGS =
 STRIP   = strip
 
-BIN     = cat echo true false
+BIN     = cat echo tee true false
 TARGETS = $(BIN:%=build/bin/%)
 
 # Shared utility code

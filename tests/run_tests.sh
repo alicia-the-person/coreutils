@@ -2,6 +2,7 @@
 
 # Default to ./build if BIN_DIR isn't explicitly provided
 export BIN_DIR="${BIN_DIR:-$(pwd)/build}"
+export POSIXLY_CORRECT=1
 
 # Ensure the binary directory actually exists
 if [ ! -d "$BIN_DIR" ]; then

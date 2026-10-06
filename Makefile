@@ -14,6 +14,8 @@ PREFIX ?= $(HOME)/.local/share/my-coreutils
 BINDIR  = $(DESTDIR)$(PREFIX)/bin
 BUILD_DIR = $(CURDIR)/build/bin
 
+export POSIXLY_CORRECT=1
+
 all: $(TARGETS)
 
 build/bin/%: build/obj/%.o $(SHARED_OBJ)
